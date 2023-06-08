@@ -83,3 +83,18 @@
     },
   });
 })(jQuery);
+// Generate QR code for Product 1
+let options = {
+  width: 100,
+  height: 100,
+};
+let product1 = new QRCode("product-1", options);
+product1.makeCode(JSON.stringify({ name: "beurre", prix: "3000DA" }));
+
+// Generate QR code for Product 2
+let product2 = new QRCode("product-2", options);
+product2.makeCode(JSON.stringify({ name: "Yaourt Nature", prix: "4000DA" }));
+
+// Generate QR code for Product 3
+let product3 = new QRCode("product-3", options);
+product3.makeCode(JSON.stringify({ name: "Lait frais", prix: "2000DA" }));

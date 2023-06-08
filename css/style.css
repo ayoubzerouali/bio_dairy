@@ -33,7 +33,12 @@ h6,
     z-index: 99;
 }
 
-
+.qr{
+    margin: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
