@@ -5,6 +5,9 @@
     --light: #FDF5EB;
     --dark: #1E1916;
 }
+.rounded-pill:hover{
+    background-color: var(--dark);
+}
 .bg-primary{
     background-color: var(--primary) !important;
 }
