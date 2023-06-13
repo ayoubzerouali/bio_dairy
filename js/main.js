@@ -93,8 +93,8 @@ product1.makeCode(JSON.stringify({ name: "beurre", prix: "3000DA" }));
 
 // Generate QR code for Product 2
 let product2 = new QRCode("product-2", options);
-product2.makeCode(JSON.stringify({ name: "Yaourt Nature", prix: "4000DA" }));
+product2.makeCode(JSON.stringify({ name: "Lait frais", prix: "2000DA" }));
 
 // Generate QR code for Product 3
 let product3 = new QRCode("product-3", options);
-product3.makeCode(JSON.stringify({ name: "Lait frais", prix: "2000DA" }));
+product3.makeCode(JSON.stringify({ name: "Yaourt Nature", prix: "4000DA" }));
