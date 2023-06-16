@@ -98,3 +98,31 @@ product2.makeCode(JSON.stringify({ name: "Lait frais", prix: "2000DA" }));
 // Generate QR code for Product 3
 let product3 = new QRCode("product-3", options);
 product3.makeCode(JSON.stringify({ name: "Yaourt Nature", prix: "4000DA" }));
+
+document.getElementById("chatButton").addEventListener("click", function () {
+  var chatSection = document.getElementById("chatSection");
+  chatSection.classList.toggle("visible");
+});
+
+document.addEventListener("click", function (e) {
+  var chatSection = document.getElementById("chatSection");
+  var chatButton = document.getElementById("chatButton");
+
+  if (!chatSection.contains(e.target) && e.target !== chatButton) {
+    chatSection.classList.remove("visible");
+  }
+});
+
+document.getElementById("chatForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var messageInput = document.getElementById("messageInput");
+  var message = messageInput.value;
+
+  if (message.trim() !== "") {
+    var chatMessages = document.getElementById("chatMessages");
+    var newMessage = document.createElement("div");
+    newMessage.innerText = message;
+    chatMessages.appendChild(newMessage);
+    messageInput.value = "";
+  }
+});

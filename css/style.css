@@ -469,3 +469,72 @@ h6,
 .copyright a:hover {
     color: var(--light);
 }
+
+#chatButton {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    background-color: #3498db;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 9px 23px 0px black;
+}
+  
+#chatButton img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+  
+#chatSection {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    left: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: #f1f1f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+  #chatSection.visible {
+    display: block;
+  }
+  
+  #chatMessages {
+    height: 320px;
+    padding: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+  }
+  
+  #chatForm {
+    display: flex;
+    padding: 10px;
+  }
+  
+  #messageInput {
+    flex-grow: 1;
+    margin-right: 10px;
+    border: none;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  #chatForm button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  
